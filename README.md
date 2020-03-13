@@ -36,4 +36,4 @@ Para correr este software deverá ter instalado o python3, posicionar-se na raí
  de seguida instalar as bibliotecas necessárias:
 
 1. `pip install -r requirements.txt `
-2. `pip main.py`
+2. `python main.py`

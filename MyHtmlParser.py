@@ -30,10 +30,13 @@ class MyHtmlParser:
 
         self.url = url
 
-    def set_range_dates(self, start_date, end_date):
-
-        start = datetime.strptime(start_date, "%Y-%m-%d")
-        end = datetime.strptime(end_date, "%Y-%m-%d")
+    def set_range_dates(self, period):
+        """
+        :param period: a tuple containing strings with start and end dates
+        :return:
+        """
+        start = datetime.strptime(period[0], "%Y-%m-%d")
+        end = datetime.strptime(period[1], "%Y-%m-%d")
         date_array = (start + timedelta(days=x) for x in range(0, (end - start).days))
         self.days = list(date_array)
 
