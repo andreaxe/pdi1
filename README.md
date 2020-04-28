@@ -37,3 +37,5 @@ Para correr este software deverá ter instalado o python3, posicionar-se na raí
 
 1. `pip install -r requirements.txt `
 2. `python main.py`
+
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag

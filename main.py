@@ -3,9 +3,13 @@ from sources import data
 
 if __name__ == '__main__':
 
-    for d in data:
-
-        parsed = MyHtmlParser(dataset_name=d.get("dataset"), url=d.get("url"))
-        parsed.set_range_dates(d.get("period"))
-        parsed.retrieve_data()
-
+    # exclude = ['total_load']
+    exclude = []
+    for k in data:
+        if k in exclude:
+            continue
+        for v in data[k]:
+            parsed = MyHtmlParser(dataset_name=v.get("dataset"), url=v.get("url"), dataset_type=k)
+            print(v.get('dataset'))
+            parsed.set_range_dates(v.get("period"))
+            parsed.retrieve_data()
