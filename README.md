@@ -27,8 +27,16 @@ Todos os grupos terão que validar o tema escolhido com o docente.
 ### Método escolhido
 
 O site escolhido para a recolha de informação foi o: https://transparency.entsoe.eu/
-
 Trata-se de um site com informação diversa sobre o estado da rede eléctrica em vários paises, actualizado a cada hora.
+
+Pretende-se reunir informação de consumo e tipos de geração de energia para 5 países (Portugal, Espanha, Itália, Alemanha e Irlanda).
+Os elementos em estudo são os seguintes:
+
+#### Informação sobre consumo (previsão e observado) 
+https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show
+
+#### Imformação sobre os tipos de produção
+https://transparency.entsoe.eu/generation/r2/installedGenerationCapacityAggregation/show
 
 ### Instalação
 

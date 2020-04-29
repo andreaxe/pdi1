@@ -1,7 +1,7 @@
 import os
 import time
 import pandas as pd
-from models.MyModel import ProductionType
+from models.MyModel import ProductionType, TotalLoad
 
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
@@ -66,6 +66,8 @@ class MyHtmlParser:
 
         # is going to retrieve data looping through days and store the result into a CSV File
         if self.days is not None:
+
+            total_load = TotalLoad()
             for day in self.days:
                 time.sleep(1)
                 # "urllib.error.HTTPError: HTTP Error 429: Too Many Requests"
@@ -75,6 +77,8 @@ class MyHtmlParser:
                 res = self.parse_data(url)
                 self.data = pd.DataFrame(data=res)
                 self.save(day)
+                total_load.save(df=self.data, day=day, country=self.dataset_name)
+
         if self.range_year is not None:
 
             production_type = ProductionType()
@@ -83,7 +87,7 @@ class MyHtmlParser:
             res = self.parse_data(url)
             self.data = pd.DataFrame(data=res)
             self.save(self.dataset_name)
-            production_type.save(self.data, self.range_year, country=self.dataset_name)
+            production_type.save(df=self.data, range_dates=self.range_year, country=self.dataset_name)
 
             pass
 

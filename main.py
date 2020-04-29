@@ -4,7 +4,7 @@ from sources import data
 if __name__ == '__main__':
 
     # exclude = ['total_load']
-    exclude = []
+    exclude = ['production_type']
     for k in data:
         if k in exclude:
             continue

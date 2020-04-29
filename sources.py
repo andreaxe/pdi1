@@ -1,55 +1,55 @@
 data = {
-    # "total_load": [
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=true&"
-    #                "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10YPT-REN------W!BZN|10YPT-REN------W&"
-    #                "dateTime.timezone=UTC&dateTime.timezone_input=UTC",
-    #         "period": ("2013-2-1", "2020-3-12"),
-    #         "dataset": "Portugal load"
-    #     },
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
-    #                "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10YES-REE------0!BZN|10YES-REE------0&dateTime.timezone=UTC&d"
-    #                "ateTime.timezone_input=UTC",
-    #         "period": ("2013-2-1", "2020-3-12"),
-    #         "dataset": "Spain load"
-    #     },
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
-    #                "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10YIE-1001A00010!BZN|10Y1001A1001A59C&dateTime.timezone=UTC&"
-    #                "dateTime.timezone_input=UTC",
-    #         "period": ("2013-2-1", "2020-3-12"),
-    #         "dataset": "Ireland load"
-    #     },
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
-    #                "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10Y1001A1001A83F!CTY|10Y1001A1001A83F&dateTime.timezone=UTC&"
-    #                "dateTime.timezone_input=UTC",
-    #         "period": ("2017-1-1", "2020-4-26"),
-    #         "dataset": "Germany load"
-    #     },
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
-    #                "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10YIE-1001A00010!CTY|10YIE-1001A00010&dateTime.timezone=UTC&"
-    #                "dateTime.timezone_input=UTC",
-    #         "period": ("2017-1-1", "2020-4-26"),
-    #         "dataset": "Ireland load"
-    #     },
-    #     {
-    #         "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
-    #                "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
-    #                "biddingZone.values=CTY|10YIT-GRTN-----B!CTY|10YIT-GRTN-----B&dateTime.timezone=UTC&"
-    #                "dateTime.timezone_input=UTC",
-    #         "period": ("2017-1-1", "2020-4-26"),
-    #         "dataset": "Italy load"
-    #     },
-    #
-    # ],
+    "total_load": [
+        # {
+        #     "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=true&"
+        #            "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+        #            "biddingZone.values=CTY|10YPT-REN------W!BZN|10YPT-REN------W&"
+        #            "dateTime.timezone=UTC&dateTime.timezone_input=UTC",
+        #     "period": ("2015-3-11", "2020-3-12"),
+        #     "dataset": "Portugal load"
+        # },
+        {
+            "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
+                   "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+                   "biddingZone.values=CTY|10YES-REE------0!BZN|10YES-REE------0&dateTime.timezone=UTC&d"
+                   "ateTime.timezone_input=UTC",
+            "period": ("2013-2-1", "2020-3-12"),
+            "dataset": "Spain load"
+        },
+        {
+            "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
+                   "viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+                   "biddingZone.values=CTY|10YIE-1001A00010!BZN|10Y1001A1001A59C&dateTime.timezone=UTC&"
+                   "dateTime.timezone_input=UTC",
+            "period": ("2013-2-1", "2020-3-12"),
+            "dataset": "Ireland load"
+        },
+        {
+            "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
+                   "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+                   "biddingZone.values=CTY|10Y1001A1001A83F!CTY|10Y1001A1001A83F&dateTime.timezone=UTC&"
+                   "dateTime.timezone_input=UTC",
+            "period": ("2017-1-1", "2020-4-26"),
+            "dataset": "Germany load"
+        },
+        {
+            "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
+                   "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+                   "biddingZone.values=CTY|10YIE-1001A00010!CTY|10YIE-1001A00010&dateTime.timezone=UTC&"
+                   "dateTime.timezone_input=UTC",
+            "period": ("2017-1-1", "2020-4-26"),
+            "dataset": "Ireland load"
+        },
+        {
+            "url": "https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show?name=&defaultValue=false&"
+                   "viewType=TABLE&areaType=CTY&atch=false&dateTime.dateTime={datetime}|UTC|DAY&"
+                   "biddingZone.values=CTY|10YIT-GRTN-----B!CTY|10YIT-GRTN-----B&dateTime.timezone=UTC&"
+                   "dateTime.timezone_input=UTC",
+            "period": ("2017-1-1", "2020-4-26"),
+            "dataset": "Italy load"
+        },
+
+    ],
     "production_type": [
         {
             "url": "https://transparency.entsoe.eu/generation/r2/installedGenerationCapacityAggregation/show?"
