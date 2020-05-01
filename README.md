@@ -29,7 +29,8 @@ Todos os grupos terão que validar o tema escolhido com o docente.
 O site escolhido para a recolha de informação foi o: https://transparency.entsoe.eu/
 Trata-se de um site com informação diversa sobre o estado da rede eléctrica em vários paises, actualizado a cada hora.
 
-Pretende-se reunir informação de consumo e tipos de geração de energia para 5 países (Portugal, Espanha, Itália, Alemanha e Irlanda).
+Pretende-se reunir informação de consumo e tipos de produçáo de energia para 5 países (Portugal, Espanha, Itália, 
+Alemanha e Irlanda).
 Os elementos em estudo são os seguintes:
 
 #### Informação sobre consumo (previsão e observado) 
@@ -62,4 +63,34 @@ Caso já disponha de uma instância MySQL deverá alterar as condições de aces
 nomeadamente o *username, password e host*.
 
 ```python
-engine = create_engine('mysql+mysqlconnector://root:password@localhost')  # connect to server  
+engine = create_engine('mysql+mysqlconnector://root:password@localhost')  # connect to server
+```
+
+### Objectivos do 2º Momento
+
+Pretende-se criar um módulo de armazenamento permita alojar a informação obtida através do módulo extrator criado no 
+TP1. A passagem dos dados para o módulo de armazenamento poderá ser feita diretamente a partir da web ou a partir 
+dos dados previamente armazenados durante o desenvolvimento do TP1.
+
+#### Resultados
+
+O objectivo deste 2º momento é armazenar a informação trabalhada no 1º momento em um SGBD.
+
+Posteriormente para o 3º momento o objectivo é avaliar com base na informação recolhida o seguinte:
+
+#### Consumo:
+
+1.  Avaliar o erro de previsão da plataforma para a previsão de consumo. Verificar a média do erro para todos os países 
+e retirar algumas conclusões se possivel. 
+2. Determinar o dia em que foi observado o maior erro para cada país. Tentar justificar se possivel com 
+algum acontecimento de ordem imprevisivel. Por exemplo o erro da previsão de consumo no dia em que foi estado de emergência.
+3. Avaliar através dos valores observados, os meses ou dias onde a carga foi mais elevada. 
+Determinar também o ano/periodo onde existiu um máximo e mínimo de carga. Tentar explicar e retirar conclusões.
+4. Avaliar o impacto de pontes nos valores observados para os diferentes países.
+5. Avaliar o impacto que o COVID-19 teve na carga/consumo de energia nos diferentes países no mês de Março e Abril 
+em comparação com anos anteriores.  
+
+#### Tipos de Produção
+
+6. Através de um gráfico, verificar a evolução das energias renováveis para os diferentes países.
+7. Através de um gráfico, Verificar a evolução na diminuição de combustiveis fosseis nos diferentes países.
