@@ -3,8 +3,7 @@ from sources import data
 
 if __name__ == '__main__':
 
-    # exclude = ['total_load']
-    exclude = ['production_type']
+    exclude = []
     for k in data:
         if k in exclude:
             continue
