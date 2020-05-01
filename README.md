@@ -44,6 +44,22 @@ Para correr este software deverá ter instalado o python3, posicionar-se na raí
  de seguida instalar as bibliotecas necessárias:
 
 1. `pip install -r requirements.txt `
-2. `python main.py`
+2. Para correr o software deverá executar o ficheiro **main.py** (certifique-se que dispõe de uma base de dados e que as 
+condições de acesso se encontram correctamente definidas (caso contrário verificar o ponto seguinte): `python main.py`
 
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+### Base de dados MySQL
+
+O projecto necessita de uma base de dados MYSQL operacional. Poderá usar os seguintes métodos para criação e gestão
+de uma instância MySQL.
+
+#### Docker
+
+1. docker run --name mysql-server -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql:latest
+
+#### Base de dados existente
+
+Caso já disponha de uma instância MySQL deverá alterar as condições de acesso no ficheiro: *models/MyModel.py* 
+nomeadamente o *username, password e host*.
+
+```python
+engine = create_engine('mysql+mysqlconnector://root:password@localhost')  # connect to server  
