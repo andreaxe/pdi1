@@ -53,6 +53,9 @@ condições de acesso se encontram correctamente definidas (caso contrário veri
 O projecto necessita de uma base de dados MYSQL operacional. Poderá usar os seguintes métodos para criação e gestão
 de uma instância MySQL.
 
+Na pasta ```/dump``` do projecto encontra-se um ficheiro que pode ser usado para importar a informação na base de dados.
+Dessa forma evita-se a necessidade de extrair a informação do site, que poderá levar algumas horas. 
+
 #### Docker
 
 1. docker run --name mysql-server -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql:latest
