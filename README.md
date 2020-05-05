@@ -1,5 +1,9 @@
 # Trabalho de Processamento de Informação
 
+## Repositório do projecto
+
+https://github.com/andreaxe/pdi1
+
 ## Objetivo
 
 Pretende-se criar um módulo extrator que permita obter informação a partir da Web, de forma automatizada, 
