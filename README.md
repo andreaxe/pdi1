@@ -101,3 +101,11 @@ em comparação com anos anteriores.
 
 6. Através de um gráfico, verificar a evolução das energias renováveis para os diferentes países.
 7. Através de um gráfico, Verificar a evolução na diminuição de combustiveis fosseis nos diferentes países.
+
+##### Consumo mês de Abril 2020 em Portugal em comoaração com períodos homólogos de 2018 e 2019 
+
+Vista semanal:
+![image](https://user-images.githubusercontent.com/9929973/81051964-900c2e00-8eba-11ea-8a8f-d1549442b1c1.png)
+
+Vista mensal do agregado diário ce consumo:
+![image](https://user-images.githubusercontent.com/9929973/81052017-a7e3b200-8eba-11ea-94c6-6941f40e02ab.png)
