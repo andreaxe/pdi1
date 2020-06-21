@@ -97,6 +97,9 @@ app = dash.Dash(
     __name__,
     external_stylesheets=external_stylesheets
 )
+
+app.title = 'PDI'
+
 session = Session()
 
 rset = session.query(TotalLoad).all()
