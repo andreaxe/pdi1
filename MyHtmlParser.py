@@ -88,7 +88,6 @@ class MyHtmlParser:
             self.data = pd.DataFrame(data=res)
             self.save(self.dataset_name)
             production_type.save(df=self.data, range_dates=self.range_year, country=self.dataset_name)
-
             pass
 
     @staticmethod

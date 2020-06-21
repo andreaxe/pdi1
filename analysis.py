@@ -55,7 +55,8 @@ fig, ax = plt.subplots(1, 1, figsize=(15, 7))
 data_2018 = data['2018-04-01':'2018-04-30 23:59']
 data_2019 = data['2019-04-01':'2019-04-30 23:59']
 data_2020 = data['2020-04-01':'2020-04-30 23:59']
-
+ax.set_rasterized(True)
+# to_plot_2018.to_frame().savefig('rasterized_fig.eps')
 to_plot_2018 = data_2018.groupby(data_2018.index.strftime(
     "%m-%d")).sum().rename(columns={"observed": '2018'})["2018"]
 to_plot_2019 = data_2019.groupby(data_2019.index.strftime(
