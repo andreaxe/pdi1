@@ -26,30 +26,13 @@ O trabalho implica uma demonstração/explicação presencial a realizar em sala
 Cada grupo terá que explorar um tema diferente dos demais.
 Todos os grupos terão que validar o tema escolhido com o docente.
 
-## Resultados
-
-### Método escolhido
-
-O site escolhido para a recolha de informação foi o: https://transparency.entsoe.eu/
-Trata-se de um site com informação diversa sobre o estado da rede eléctrica em vários paises, actualizado a cada hora.
-
-Pretende-se reunir informação de consumo e tipos de produçáo de energia para 5 países (Portugal, Espanha, Itália, 
-Alemanha e Irlanda).
-Os elementos em estudo são os seguintes:
-
-#### Informação sobre consumo (previsão e observado) 
-https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show
-
-#### Imformação sobre os tipos de produção
-https://transparency.entsoe.eu/generation/r2/installedGenerationCapacityAggregation/show
-
-### Instalação
+## Instalação
 
 Para correr este software deverá ter instalado o python3, posicionar-se na raíz do programa e
  de seguida instalar as bibliotecas necessárias:
 
 1. `pip install -r requirements.txt `
-2. Para correr o software deverá executar o ficheiro **main.py** (certifique-se que dispõe de uma base de dados e que as 
+2. Para correr o software de extração deverá executar o ficheiro **main.py** (certifique-se que dispõe de uma base de dados e que as 
 condições de acesso se encontram correctamente definidas (caso contrário verificar o ponto seguinte): `python main.py`
 
 ### Base de dados MySQL
@@ -70,7 +53,7 @@ nomeadamente o *username, password e host*.
 engine = create_engine('mysql+mysqlconnector://root:password@localhost')  # connect to server
 ```
 
-#### Extração dos dados
+### Extração dos dados
 
 Caso pretenda extrair os dados através do método de webscrapping pode fazê-lo através da execução do script **main.py**.
 
@@ -80,7 +63,23 @@ o intervalo de datas da informação a extrair.
 Alternativamente encontra-se disponivel um ficheiro dump de uma base de dados que poderá importar.
 Na pasta ```/dump``` do projecto encontra-se um ficheiro que pode ser usado para importar a informação na base de dados.
 Dessa forma evita-se a necessidade de extrair a informação do site, que poderá levar algumas horas.
- 
+
+
+## Método escolhido
+
+O site escolhido para a recolha de informação foi o: https://transparency.entsoe.eu/
+Trata-se de um site com informação diversa sobre o estado da rede eléctrica em vários paises, actualizado a cada hora.
+
+Pretende-se reunir informação de consumo e tipos de produçáo de energia para 5 países (Portugal, Espanha, Itália, 
+Alemanha e Irlanda).
+Os elementos em estudo são os seguintes:
+
+#### Informação sobre consumo (previsão e observado) 
+https://transparency.entsoe.eu/load-domain/r2/totalLoadR2/show
+
+#### Imformação sobre os tipos de produção
+https://transparency.entsoe.eu/generation/r2/installedGenerationCapacityAggregation/show
+
 ### Objectivos do 2º Momento
 
 Pretende-se criar um módulo de armazenamento permita alojar a informação obtida através do módulo extrator criado no 
@@ -147,6 +146,9 @@ diferentes países e dimensões dos dados recolhidos.
  
  
  #### Dashboard com os resultados
+ Para correr o dashboard execute o ficheiro **dashboard.py** disponível na raiz do projecto.
+ O endereço da página web deverá ser o seguinte:  http://127.0.0.1:8050/
+ 
  ![screencapture-127-0-0-1-8050-2020-06-21-23_07_53](https://user-images.githubusercontent.com/9929973/85236248-3af98c80-b414-11ea-8ebd-17ca3916731a.png)
 
  

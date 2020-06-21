@@ -1,12 +1,7 @@
-from sqlalchemy import create_engine, select
 from models.MyModel import TotalLoad, Session, ProductionType
 from collections import defaultdict
 from sqlalchemy.inspection import inspect
 import pandas as pd
-from datetime import datetime as dt
-import sys
-import plotly.offline as pyo
-import plotly.express as px
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import dash
