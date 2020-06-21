@@ -144,6 +144,10 @@ diferentes países e dimensões dos dados recolhidos.
  
  4. Demonstração da avaliação do erro de previsão cometido pela plataforma.
  
+ #### Notas:
+ Apenas foram seleccionados 5 países por uma questão de tempo na recolha da informação. O programa encontra-se 
+ preparado para extrair e actualizar no dashboard a informação disponível em Base de dados de todos os paises que se encontrem na lista do 
+ ficheiro **sources.py** e cujo o processo de extração de dados tenha sido concluido.
  
  #### Dashboard com os resultados
  Para correr o dashboard execute o ficheiro **dashboard.py** disponível na raiz do projecto.
